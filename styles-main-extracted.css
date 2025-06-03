@@ -3,6 +3,36 @@
  * License - https://fontawesome.com/license (Commercial License)
  * Copyright 2024 Fonticons, Inc.
  */
+
+/* CSS Variables for theme and buttons - moved to top for priority */
+:root {
+  --accent-color: #FF5722;
+  --accent2-color: #FFC107;
+  --accent3-color: #8BC34A;
+  --accent4-color: #00BCD4;
+  --primary-color: #4CAF50;
+  --dark-text-color: #212121;
+  --gray-text-color: #767676;
+  --button-padding-x: 12px;
+  --button-padding-y: 8px;
+  --font-family-body: 'Roboto', sans-serif;
+  --light-text-color: #FFFFFF;
+  --dark-border-color: #455A64;
+  --light-border-color: #B2DFDB;
+  --font-family-heading: 'Poppins', sans-serif;
+  --button-rounded-radius: 6px;
+  --dark-background-color: #263238;
+  --light-background-color: #E8F5E9;
+  --medium-background-color: #C8E6C9;
+  --primary-button-bg-color: #4CAF50;
+  --primary-button-text-color: #FFFFFF;
+  --secondary-button-bg-color: #009688;
+  --secondary-button-text-color: #FFFFFF;
+  --primary-button-hover-bg-color: #45A149;
+  --primary-button-hover-text-color: #FFFFFF;
+  --secondary-button-hover-bg-color: #00796B;
+  --secondary-button-hover-text-color: #FFFFFF;
+}
     .fa.fa-glass {
       --fa: "\f000"
     }

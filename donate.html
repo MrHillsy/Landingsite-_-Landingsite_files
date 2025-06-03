@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link id="google-fonts-link"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <title>Donate</title>
+  <style>
+    body {
+      font-family: var(--font-family-body, 'Roboto', 'Poppins', 'Arimo', 'Heebo', 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #1a2a36;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .donate-unique {
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+      max-width: 420px;
+      width: 100%;
+      padding: 2.5rem 2rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .donate-unique:before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #4CAF50 60%, #8BC34A 100%);
+      border-radius: 50%;
+      opacity: 0.13;
+      z-index: 0;
+    }
+    .donate-unique h1 {
+      color: #388e3c;
+      font-size: 2.1rem;
+      margin-bottom: 0.7rem;
+      position: relative;
+      z-index: 1;
+      letter-spacing: 0.01em;
+    }
+    .donate-unique p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 1.1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .paypal-btn {
+      display: inline-block;
+      background: #ffc439;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 0.85rem 2.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+      cursor: pointer;
+      transition: background 0.18s, box-shadow 0.18s;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+    .paypal-btn:hover {
+      background: #ffb347;
+      box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+    }
+    .paypal-logo {
+      vertical-align: middle;
+      margin-right: 0.6em;
+      height: 1.2em;
+    }
+    .donate-impact {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0 0.7rem 0;
+      font-size: 0.98rem;
+      color: #388e3c;
+      opacity: 0.85;
+      position: relative;
+      z-index: 1;
+    }
+    .donate-impact span {
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+    }
+    .donate-impact svg {
+      height: 1.1em;
+      width: 1.1em;
+      fill: #4CAF50;
+    }
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        padding: 0;
+        min-height: unset;
+      }
+      .donate-unique {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        max-width: 100vw;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .donate-unique h1 {
+        font-size: 1.4rem;
+      }
+      .donate-unique p {
+        font-size: 1rem;
+      }
+      .paypal-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.85rem 0;
+      }
+      .donate-impact {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: flex-start;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="donate-unique">
+    <h1>Support Our Mission</h1>
+    <p>Your donation helps us rescue, care for, and rehome animals in need. Every contribution, big or small, makes a difference in the lives of pets and the families who welcome them.</p>
+    <div class="donate-impact">
+      <span><svg viewBox="0 0 20 20"><path d="M10 18s-6-4.35-6-9.5A4.5 4.5 0 0 1 10 4a4.5 4.5 0 0 1 6 4.5C16 13.65 10 18 10 18z"></path></svg> 100% Secure</span>
+      <span><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 12.93V14a1 1 0 1 1-2 0v-1.07A6.002 6.002 0 0 1 4.07 11H6a1 1 0 1 1 0 2H4.07A6.002 6.002 0 0 1 9 4.07V6a1 1 0 1 1 2 0V4.07A6.002 6.002 0 0 1 15.93 9H14a1 1 0 1 1 0-2h1.93A6.002 6.002 0 0 1 11 15.93z"></path></svg> Tax-deductible</span>
+      <span><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 12.93V14a1 1 0 1 1-2 0v-1.07A6.002 6.002 0 0 1 4.07 11H6a1 1 0 1 1 0 2H4.07A6.002 6.002 0 0 1 9 4.07V6a1 1 0 1 1 2 0V4.07A6.002 6.002 0 0 1 15.93 9H14a1 1 0 1 1 0-2h1.93A6.002 6.002 0 0 1 11 15.93z"></path></svg> Impactful Giving</span>
+    </div>
+    <p>Funds are used for food, medical care, shelter, and outreach programs that educate the community about responsible pet ownership.</p>
+    <form action="https://www.paypal.com/donate" method="post" target="_blank" style="margin-top:1.5rem;">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_HERE">
+      <button type="submit" class="paypal-btn">
+        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" class="paypal-logo"/> Donate with PayPal
+      </button>
+    </form>
+    <p style="font-size:0.93rem;color:#888;margin-top:1.2rem;">We appreciate your support! All donations are processed securely via PayPal.</p>
+  </div>
+</body>
+
+</html>

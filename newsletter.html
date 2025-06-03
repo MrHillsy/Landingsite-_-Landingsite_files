@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link id="google-fonts-link"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <title>Subscribe to Our Newsletter</title>
+  <link rel="stylesheet" href="styles-extracted.css">
+  <link rel="stylesheet" href="styles-main-extracted.css">
+  <link rel="stylesheet" href="css2.css">
+  <link rel="stylesheet" href="index-CfxltKZt.css">
+  <style>
+    body {
+      font-family: var(--font-family-body, 'Roboto', 'Poppins', 'Arimo', 'Heebo', 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      background: #f7fafc;
+      color: #1a2a36;
+      margin: 0;
+      padding: 0;
+    }
+    .newsletter-container {
+      max-width: 480px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+      padding: 2.5rem 2rem 2rem 2rem;
+      text-align: left;
+    }
+    h1 {
+      color: #388e3c;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    input[type="email"] {
+      padding: 0.8rem 1rem;
+      border: 1px solid #bdbdbd;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input[type="email"]:focus {
+      border: 1.5px solid #388e3c;
+    }
+    button[type="submit"] {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.9rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    button[type="submit"]:hover {
+      background: #256029;
+    }
+    .contact-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #388e3c;
+      text-decoration: underline;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .contact-link:hover {
+      color: #256029;
+    }
+  </style>
+</head>
+<body>
+  <div class="newsletter-container">
+    <img src="newsletterimg.svg" alt="Newsletter" style="display:block;max-width:180px;width:60%;margin:0 auto 1.5rem auto;">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Stay up to date with the latest news, pet safety tips, adoption stories, and events from our sanctuary. Enter your email below to join our community!</p>
+    <form action="#" method="post" autocomplete="off">
+      <input type="email" name="email" id="newsletter-email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="thankyou-message" style="display:none; color:#388e3c; font-weight:600; margin-top:1.5rem; font-size:1.1rem;">Thank you for subscribing!</div>
+    <script>
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('thankyou-message').style.display = 'block';
+        this.reset();
+      });
+    </script>
+    <footer style="text-align:center; margin-top:2.5rem; color:#888; font-size:0.98rem;">
+      &copy; 2025 snugglesquadsanctuary. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
